@@ -1,19 +1,15 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Запускать при пуше в main ветку
   push:
     branches: ["main"]
-  # Разрешить ручной запуск из интерфейса GitHub
   workflow_dispatch:
 
-# Устанавливаем права для GitHub Actions
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Обеспечиваем только одну одновременную публикацию
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -34,6 +30,21 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      # --- Добавленные шаги для установки зависимостей ---
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # можно использовать любую LTS версию
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10        # соответствует твоему packageManager
+
+      - name: Install dependencies
+        run: pnpm install
+      # -------------------------------------------------
+
       - name: Build site
         run: hugo --minify --gc
 
@@ -52,4 +63,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
