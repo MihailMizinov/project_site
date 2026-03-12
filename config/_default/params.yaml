@@ -1,15 +1,3 @@
-features:
-  math:
-    enable: true
-  privacy:
-    enable: true
-
-image:
-  remote:
-    enable: true
-
-unsplash:
-  enable: false
 # ══════════════════════════════════════════════════════════════════════════════
 # HUGO BLOX CONFIGURATION
 # Schema: hugoblox.com/schema/v2
@@ -25,7 +13,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: ".Moй академический сайт"
+    name: "Your Name"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
