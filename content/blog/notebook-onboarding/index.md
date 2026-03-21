@@ -1,38 +1,25 @@
 ---
-title: ⚡️ Git versions control
-summary: Git is great and everyone should use it!!!
+title: "Управление версиями (Git) и CI/CD"
 date: 2026-03-21
+summary: "Почему Git — основа разработки, и как CI/CD автоматизирует доставку кода."
+tags: ["Git", "CI/CD", "DevOps"]
+categories: ["Технологии"]
 authors:
   - me
-tags:
-  - Tutorials
-cover:
-  # image: cover.jpg  # Auto-detected from cover image in this folder
-  icon:
-    name: "📔"
-image:
-  caption: "Image credit: [HugoBlox](https://hugoblox.com)"
-  focal_point: Center
-  placement: 1
-content_meta:
-  trending: true
 ---
 
-Use git!!!
+## Git: контроль версий как образ жизни
 
-Dont ask any questions!!!!!!
+Git — распределённая система контроля версий, которая позволяет:
 
-{{< toc mobile_only=true is_open=true >}}
+- Отслеживать изменения в коде
+- Работать в команде без конфликтов
+- Возвращаться к предыдущим версиям
 
-## Why use git?
+Основные команды:
 
-> [!TIP]
-- **Flexible sourcing** – Display even notebooks on even directly from a remote GitHub URL.
-- **Interactive** – Users can use git everywhere.
-
-## Example: Git
-
-Below is a live example of git usage
-git init
-
-Happy researching! 🚀
+```bash
+git init          # создать репозиторий
+git add .         # добавить изменения
+git commit -m "message"   # зафиксировать
+git push          # отправить на сервер
