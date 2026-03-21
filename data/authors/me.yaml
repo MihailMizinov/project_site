@@ -2,9 +2,9 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
+  display: M.G. Mizinov
+  given: Mihail
+  family: Mizinov
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
   pronouns: he/him
@@ -13,12 +13,9 @@ postnominals:
   - MIEEE
 status:
   icon: "☕️"
-role: Senior AI Research Scientist
+role: Juniour python developer
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  Coolest developer all over the world
 
 affiliations:
   - name: Meta AI
@@ -40,18 +37,18 @@ links:
     url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Large Language Models
+  - AI
   - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Python
+  - .Net
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: Computer Science
+    institution: RUDN university
+    start: 2025-09-01
+    end: 2029-06-30
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+      Win big hackaton
     button:
       text: Download dissertation
       url: /resume.pdf
