@@ -33,8 +33,6 @@ Dont ask any questions!!!!!!
 ## Example: Git
 
 Below is a live example of git usage
-
-{{< git start
->}}
+git init
 
 Happy researching! 🚀
